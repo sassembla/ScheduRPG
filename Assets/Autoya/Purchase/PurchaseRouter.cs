@@ -168,39 +168,39 @@ namespace AutoyaFramework.Purchase {
 			HttpRequestHeaderDelegate httpGetRequestHeaderDeletage=null, 
 			HttpResponseHandlingDelegate httpResponseHandlingDelegate =null
 		) {
-			this.storeId = Guid.NewGuid().ToString();
+			// this.storeId = Guid.NewGuid().ToString();
 			
-			this.enumExecutor = executor;
+			// this.enumExecutor = executor;
 			
-			/*
-				set store kind by platform.
-			*/
-			#if UNITY_EDITOR
-				this.storeKind = AppleAppStore.Name;
-			#elif UNITY_IOS
-				this.storeKind = AppleAppStore.Name;
-			#elif UNITY_ANDROID
-				this.storeKind = GooglePlay.Name;
-			#endif
+			// /*
+			// 	set store kind by platform.
+			// */
+			// #if UNITY_EDITOR
+			// 	this.storeKind = AppleAppStore.Name;
+			// #elif UNITY_IOS
+			// 	this.storeKind = AppleAppStore.Name;
+			// #elif UNITY_ANDROID
+			// 	this.storeKind = GooglePlay.Name;
+			// #endif
 
-			if (httpGetRequestHeaderDeletage != null) {
-				this.httpRequestHeaderDelegate = httpGetRequestHeaderDeletage;
-			} else {
-				this.httpRequestHeaderDelegate = BasicRequestHeaderDelegate;
-			}
+			// if (httpGetRequestHeaderDeletage != null) {
+			// 	this.httpRequestHeaderDelegate = httpGetRequestHeaderDeletage;
+			// } else {
+			// 	this.httpRequestHeaderDelegate = BasicRequestHeaderDelegate;
+			// }
 
-			this.http = new HTTPConnection();
+			// this.http = new HTTPConnection();
 			
-			if (httpResponseHandlingDelegate != null) {
-				this.httpResponseHandlingDelegate = httpResponseHandlingDelegate;
-			} else {
-				this.httpResponseHandlingDelegate = BasicResponseHandlingDelegate;
-			}
+			// if (httpResponseHandlingDelegate != null) {
+			// 	this.httpResponseHandlingDelegate = httpResponseHandlingDelegate;
+			// } else {
+			// 	this.httpResponseHandlingDelegate = BasicResponseHandlingDelegate;
+			// }
 
-			this.onTicketResponse = onTicketResponse;
+			// this.onTicketResponse = onTicketResponse;
 
-			var cor = _Ready(onLoadProducts, onPurchaseReady, onPurchaseReadyFailed);
-			enumExecutor(cor);
+			// var cor = _Ready(onLoadProducts, onPurchaseReady, onPurchaseReadyFailed);
+			// enumExecutor(cor);
 		}
 
 		public ProductInfo[] ProductInfos () {
@@ -247,28 +247,28 @@ namespace AutoyaFramework.Purchase {
 		}
 		
 		private void ReadyIAPFeature (ProductInfo[] productInfos) {
-			routerState = RouterState.LoadingStore;
+			// routerState = RouterState.LoadingStore;
 
-			var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+			// var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 			
-			foreach (var productInfo in productInfos) {
-				builder.AddProduct(
-					productInfo.productId, 
-					ProductType.Consumable, new IDs{
-						{productInfo.platformProductId, storeKind}
-					}
-				);
-			}
+			// foreach (var productInfo in productInfos) {
+			// 	builder.AddProduct(
+			// 		productInfo.productId, 
+			// 		ProductType.Consumable, new IDs{
+			// 			{productInfo.platformProductId, storeKind}
+			// 		}
+			// 	);
+			// }
 
-			/*
-				check network connectivity again. because Unity IAP never tells offline.
-			*/
-			if (Application.internetReachability == NetworkReachability.NotReachable) {
-				failedToReady(PurchaseReadyError.Offline, 0, "network is offline.");
-				return;
-			}
+			// /*
+			// 	check network connectivity again. because Unity IAP never tells offline.
+			// */
+			// if (Application.internetReachability == NetworkReachability.NotReachable) {
+			// 	failedToReady(PurchaseReadyError.Offline, 0, "network is offline.");
+			// 	return;
+			// }
 			
-			UnityPurchasing.Initialize(this, builder);
+			// UnityPurchasing.Initialize(this, builder);
 		}
 		private IStoreController controller;
 		private IExtensionProvider extensions;

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
-using UnityEngine.Purchasing.Security;
+// using UnityEngine.Purchasing.Security;
 
 /**
 	purchase feature of Autoya.
@@ -84,47 +84,47 @@ namespace AutoyaFramework.Purchase {
 			constructor.
 		 */
 		public LocalPurchaseRouter (ProductInfo[] productInfos, Action onReadyPurchase, Action<PurchaseError, string> onReadyFailed, Action<string> onPurchaseDoneInBackground) {
-			this.storeId = Guid.NewGuid().ToString();
+			// this.storeId = Guid.NewGuid().ToString();
 			
-			this.verifiedProducts = productInfos;
+			// this.verifiedProducts = productInfos;
 
-            this.readyPurchase = onReadyPurchase;
-            this.failedToReady = onReadyFailed;
-            this.purchasedInBackground = onPurchaseDoneInBackground;
+            // this.readyPurchase = onReadyPurchase;
+            // this.failedToReady = onReadyFailed;
+            // this.purchasedInBackground = onPurchaseDoneInBackground;
 
-			/*
-				set store kind by platform.
-			*/
-			#if UNITY_EDITOR
-				this.storeKind = AppleAppStore.Name;
-			#elif UNITY_IOS
-				this.storeKind = AppleAppStore.Name;
-			#elif UNITY_ANDROID
-				this.storeKind = GooglePlay.Name;
-			#endif
+			// /*
+			// 	set store kind by platform.
+			// */
+			// #if UNITY_EDITOR
+			// 	this.storeKind = AppleAppStore.Name;
+			// #elif UNITY_IOS
+			// 	this.storeKind = AppleAppStore.Name;
+			// #elif UNITY_ANDROID
+			// 	this.storeKind = GooglePlay.Name;
+			// #endif
 
-			routerState = RouterState.LoadingStore;
+			// routerState = RouterState.LoadingStore;
 
-			var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
+			// var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 			
-			foreach (var productInfo in productInfos) {
-				builder.AddProduct(
-					productInfo.productId, 
-					ProductType.Consumable, new IDs{
-						{productInfo.platformProductId, storeKind}
-					}
-				);
-			}
+			// foreach (var productInfo in productInfos) {
+			// 	builder.AddProduct(
+			// 		productInfo.productId, 
+			// 		ProductType.Consumable, new IDs{
+			// 			{productInfo.platformProductId, storeKind}
+			// 		}
+			// 	);
+			// }
 
-			/*
-				check network connectivity. because Unity IAP never tells offline.
-			*/
-			if (Application.internetReachability == NetworkReachability.NotReachable) {
-				failedToReady(PurchaseError.Offline, "network is offline.");
-				return;
-			}
+			// /*
+			// 	check network connectivity. because Unity IAP never tells offline.
+			// */
+			// if (Application.internetReachability == NetworkReachability.NotReachable) {
+			// 	failedToReady(PurchaseError.Offline, "network is offline.");
+			// 	return;
+			// }
 			
-			UnityPurchasing.Initialize(this, builder);
+			// UnityPurchasing.Initialize(this, builder);
 		}
 		
         
