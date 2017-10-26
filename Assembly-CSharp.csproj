@@ -84,6 +84,7 @@
      <Compile Include="Assets\Autoya\Settings\AutoyaRuntimeManifestObject.cs" />
      <Compile Include="Assets\Autoya\Settings\MaintenanceSettings.cs" />
      <Compile Include="Assets\Autoya\Settings\PurchaseSettings.cs" />
+     <Compile Include="Assets\Run.cs" />
      <None Include="Assets\Autoya\Editor\Libs\YamlDotNet\derivedfrom.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity5.6.1p4/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
