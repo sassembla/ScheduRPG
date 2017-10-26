@@ -25,6 +25,8 @@ ModelImporter:
     100034: underleg_1
     100036: upleg
     100038: whig
+    100040: arms_4
+    100042: hizanaka
     400000: arms
     400002: arms_1
     400004: arms_2
@@ -45,6 +47,8 @@ ModelImporter:
     400034: underleg_1
     400036: upleg
     400038: whig
+    400040: arms_4
+    400042: hizanaka
     2300000: arms
     2300002: arms_1
     2300004: arms_2
@@ -64,6 +68,8 @@ ModelImporter:
     2300032: underleg_1
     2300034: upleg
     2300036: whig
+    2300038: arms_4
+    2300040: hizanaka
     3300000: arms
     3300002: arms_1
     3300004: arms_2
@@ -83,6 +89,8 @@ ModelImporter:
     3300032: underleg_1
     3300034: upleg
     3300036: whig
+    3300038: arms_4
+    3300040: hizanaka
     4300000: head
     4300002: neck
     4300004: hair
@@ -102,6 +110,8 @@ ModelImporter:
     4300032: arms_1
     4300034: arms_2
     4300036: Layer_1
+    4300038: arms_4
+    4300040: hizanaka
   materials:
     importMaterials: 1
     materialName: 0
