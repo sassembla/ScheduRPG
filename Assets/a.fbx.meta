@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 14e02eaced509451aa6229e693141e89
+timeCreated: 1509476575
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: arms_1
+    100004: arms_2
+    100006: arms_3
+    100008: arms_4
+    100010: body
+    100012: boots
+    100014: hair
+    100016: hairring
+    100018: head
+    100020: hip
+    100022: hiza
+    100024: hizanaka
+    100026: neck
+    100028: neck_1
+    100030: stomach
+    100032: sword
+    100034: underleg
+    100036: upleg
+    100038: whig
+    400000: //RootNode
+    400002: arms_1
+    400004: arms_2
+    400006: arms_3
+    400008: arms_4
+    400010: body
+    400012: boots
+    400014: hair
+    400016: hairring
+    400018: head
+    400020: hip
+    400022: hiza
+    400024: hizanaka
+    400026: neck
+    400028: neck_1
+    400030: stomach
+    400032: sword
+    400034: underleg
+    400036: upleg
+    400038: whig
+    2300000: arms_1
+    2300002: arms_2
+    2300004: arms_3
+    2300006: arms_4
+    2300008: body
+    2300010: boots
+    2300012: hair
+    2300014: hairring
+    2300016: head
+    2300018: hip
+    2300020: hiza
+    2300022: hizanaka
+    2300024: neck
+    2300026: neck_1
+    2300028: stomach
+    2300030: sword
+    2300032: underleg
+    2300034: upleg
+    2300036: whig
+    3300000: arms_1
+    3300002: arms_2
+    3300004: arms_3
+    3300006: arms_4
+    3300008: body
+    3300010: boots
+    3300012: hair
+    3300014: hairring
+    3300016: head
+    3300018: hip
+    3300020: hiza
+    3300022: hizanaka
+    3300024: neck
+    3300026: neck_1
+    3300028: stomach
+    3300030: sword
+    3300032: underleg
+    3300034: upleg
+    3300036: whig
+    4300000: neck
+    4300002: hair
+    4300004: body
+    4300006: hairring
+    4300008: whig
+    4300010: sword
+    4300012: upleg
+    4300014: hip
+    4300016: underleg
+    4300018: hiza
+    4300020: arms_1
+    4300022: arms_2
+    4300024: hizanaka
+    4300026: head
+    4300028: stomach
+    4300030: boots
+    4300032: arms_4
+    4300034: arms_3
+    4300036: neck_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
